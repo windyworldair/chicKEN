@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0078d4 0%, #106ebe 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+header {
+    background: #0078d4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.alert {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 6px;
+}
+
+.alert.critical {
+    background: #fde7e9;
+    border: 1px solid #d13438;
+}
+
+.alert-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.alert-header .icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.update-details {
+    padding: 0 20px;
+}
+
+.detail-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.vulnerability-info {
+    padding: 20px;
+    background: #f8f9fa;
+    margin: 20px;
+    border-radius: 6px;
+}
+
+.vulnerability-info h3 {
+    margin-bottom: 10px;
+    color: #323130;
+}
+
+.vulnerability-info ul {
+    list-style-position: inside;
+    color: #605e5c;
+}
+
+.action-required {
+    padding: 20px;
+}
+
+.download-section {
+    margin: 20px 0;
+}
+
+.progress-container {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e1e1e1;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #107c10;
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    font-size: 14px;
+    color: #605e5c;
+}
+
+.download-button {
+    width: 100%;
+    padding: 15px;
+    background: #107c10;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.download-button:hover {
+    background: #0c5e0c;
+}
+
+.download-button:disabled {
+    background: #a19f9d;
+    cursor: not-allowed;
+}
+
+.loading {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    color: #605e5c;
+}
+
+.small {
+    font-size: 12px;
+    margin-top: 5px;
+}
